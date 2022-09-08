@@ -1,6 +1,6 @@
 from flask import Flask,render_template,request,send_file,redirect,url_for, Response,redirect
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 import sys
 import os
@@ -11,5 +11,5 @@ def Menu():
     return render_template("home.html")
 
 
-if _name_ == "_main_":
+if _name_ == "__main__":
     app.run(debug=True,host='0.0.0.0',port=8001)
